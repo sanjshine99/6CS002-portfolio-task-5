@@ -22,7 +22,7 @@ public class GroceryExperiment12 {
         // Read the grocery list from a file
         List<String> groceryList;
         try {
-            groceryList = Files.lines(Paths.get("grocery-list.txt"))
+            groceryList = Files.lines(Paths.get("data/groceryList.txt"))
                     .collect(Collectors.toList());
         } catch (Exception e) {
             System.err.println("Error reading the grocery list from the file.");
